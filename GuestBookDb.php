@@ -35,8 +35,7 @@ class GuestBookDb
 	public function select()
 	{
 		$sql = mysql_query("SELECT * FROM gb");
-		while($rows = mysql_fetch_array($sql))
-		{
+		while ($rows = mysql_fetch_array($sql)) {
 			$outPut[] = new GuestBook($rows['name'], $rows['email'], $rows['message'], $rows['date']);
 		}
 		return $outPut;

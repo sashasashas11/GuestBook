@@ -10,8 +10,7 @@
 require_once 'GuestBook.php';
 require_once 'GuestBookDb.php';
 
-if (isset($_REQUEST['submit']))
-{
+if (isset($_REQUEST['submit'])) {
 	$msg = $_POST['msg'];
 	$email = $_POST['email'];
 	$name = $_POST['name'];
